@@ -1,0 +1,310 @@
+{
+  "packages": [
+    {
+      "id": 1,
+      "regionId": 1,
+      "agentId": 1,
+      "agencyUuid": "22jfhuj47fjs73bdjsj",
+      "packageCode": "PKG001",
+      "name": "Package 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "validFrom": "2023-01-01",
+      "validTo": "2023-12-31",
+      "createdAt": "2023-01-01T12:00:00Z",
+      "url": "https://youimg1.tripcdn.com/target/1lo4312000axni7v15717_C_670_376_Q70.webp?proc=source%2ftrip&proc=source%2ftrip"
+    },
+    {
+      "id": 2,
+      "regionId": 2,
+      "agentId": 1,
+      "agencyUuid": "22jfhuj47fjshdjshd",
+      "packageCode": "PKG002",
+      "name": "Trip to Maldives",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "validFrom": "2023-01-01",
+      "validTo": "2023-12-31",
+      "createdAt": "2023-01-02T12:00:00Z",
+      "url": "https://images.thrillophilia.com/image/upload/s--vI0Q6HT9--/c_fill,g_auto,h_600,q_auto,w_975/f_auto,fl_strip_profile/v1/images/photos/000/082/497/original/1675261154_shutterstock_2148766633.jpg.jpg"
+    },
+    {
+      "id": 3,
+      "regionId": 1,
+      "agentId": 1,
+      "agencyUuid": "22jfhuj47fjs37dj28d",
+      "packageCode": "PKG003",
+      "name": "Best Maldives Hotels",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "validFrom": "2023-01-01",
+      "validTo": "2023-12-31",
+      "createdAt": "2023-01-03T12:00:00Z",
+      "url": "https://images.news18.com/ibnlive/uploads/2022/07/hilton-maldives-2.jpg?im=Resize,width=360,aspect=fit,type=normal?im=Resize,width=320,aspect=fit,type=normal"
+    }
+  ],
+  "places": [
+    {
+      "name": "Goa,india",
+      "imageurls": [
+        "https://www.holidify.com/images/bgImages/GOA.jpg",
+        "https://cf.bstatic.com/images/hotel/max1024x768/191/191491623.jpg",
+        "https://www.holidify.com/images/cmsuploads/compressed/shutterstock_307777376_20190822150057_20190822161317.jpg"
+      ],
+      "rentperday": 1500,
+      "type": "Delux",
+      "maxcount": 3,
+      "phonenumber": 9989649278,
+      "currentbookings": [],
+      "description": "Lying on the western coast, Goa is India's smallest state and unlike any other, known for its endless beaches, stellar nightlife, eclectic seafood, world-heritage listed architecture.",
+      "foodname": "",
+      "foodtype1": "",
+      "foodtype2": "",
+      "foodhealth": "",
+      "fooddescription": "",
+      "foodimgurls": ["", "", "", "", "", ""]
+    },
+    {
+      "name": "Capital O 15959 The City Park",
+      "imageurls": [
+        "https://images.pexels.com/photos/9411140/pexels-photo-9411140.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/38668/large/d24b920cfdddeecb.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/38668/large/58025558878fa4ec.jpg"
+      ],
+      "rentperday": 1800,
+      "type": "Delux",
+      "maxcount": 3,
+      "phonenumber": 9989649278,
+      "currentbookings": [],
+      "description": "Night Curfew in Telangana | Check-in allowed between 05:00 AM to 09:00 PM Couples are welcome Guests can check in using any local or outstation ID proof (PAN card not accepted). As a complimentary benefit, your stay is now insured by Acko.This hotel is serviced under the trade name of The City Park as per quality standards of OYO",
+      "foodname": "",
+      "foodtype": "",
+      "foodhealth": "",
+      "fooddescription": "",
+      "foodimgurls": ["", "", "", "", "", ""]
+    },
+    {
+      "name": "Goa,india",
+      "imageurls": [
+        "https://q-xx.bstatic.com/xdata/images/hotel/max1200/168385984.jpg?k=3aabe2a7150bd931a3afb05c4e639feb91dae3a2b49a5bb70159da704e8349cf&o=",
+        "https://q-xx.bstatic.com/xdata/images/hotel/max1200/168386182.jpg?k=00d498dcec67f7af4587f6f2a7aa5289e20cdee9004b874b851f681b0af99492&o=",
+        "https://q-xx.bstatic.com/xdata/images/hotel/max1200/189694316.jpg?k=bfba100d1a419a83cddda0b64abce91c626550ae4cf29d691ab75050d3332ef9&o="
+      ],
+      "rentperday": 2000,
+      "type": "Non-Delux",
+      "maxcount": 3,
+      "phonenumber": 9989649278,
+      "currentbookings": [],
+      "description": "Amboli receives the highest rainfalls in Maharashtra and thus remains pleasant all round the year. It attracts a lot of weekend visitors from Goa and Belgaum.",
+      "foodname": "",
+      "foodtype": "",
+      "foodhealth": "",
+      "fooddescription": "",
+      "foodimgurls": ["", "", "", "", "", ""]
+    },
+    {
+      "name": "Kodaikanal",
+      "imageurls": [
+        "https://q-xx.bstatic.com/xdata/images/hotel/max1200/143503668.jpg?k=3fc4310830871b5ea8c4b70c573ada162c501b9e9480edbd4bba7c2c1690e8ff&o=",
+        "https://q-xx.bstatic.com/xdata/images/hotel/max1200/141807677.jpg?k=8fd09ee1ce57a18e4aa6ca8fa479771e597dcb420e1142ee72aebc29f973c47f&o=",
+        "https://www.holidify.com/images/cmsuploads/compressed/242341350_20220223182209.jpg"
+      ],
+      "rentperday": 1600,
+      "type": "Non-Delux",
+      "maxcount": 4,
+      "phonenumber": 9989649278,
+      "currentbookings": [],
+      "description": "Situated in Kodaikanal, The Meadows is a perfect location to spend quality time with family. It is a mini-resort with impressive facilities. The Meadows features a restaurant, a sun terrace, a garden, and a shared lounge.",
+      "foodname": "",
+      "foodtype": "",
+      "foodhealth": "",
+      "fooddescription": "",
+      "foodimgurls": ["", "", "", "", "", ""]
+    },
+    {
+      "name": "Munnar,kerala",
+      "imageurls": [
+        "https://www.holidify.com/images/bgImages/AMBOLI.jpg",
+        "https://www.holidify.com/images/cmsuploads/compressed/278970821_20210521173158.jpg",
+        "https://images.oyoroomscdn.com/uploads/hotel_image/111796/large/2f7029d3c5429b5f.jpg"
+      ],
+      "rentperday": 1800,
+      "type": "Non-Delux",
+      "maxcount": 3,
+      "phonenumber": 9989649278,
+      "currentbookings": [],
+      "description": "Placed on the crest of a hill in Munnar, amidst acres of pristine landscape and lush greenery, this resort is a perfect blend of luxury and nature, offering a serene abode with an array of amenities.",
+      "foodname": "",
+      "foodtype": "",
+      "foodhealth": "",
+      "fooddescription": "",
+      "foodimgurls": ["", "", "", "", "", ""]
+    }
+  ],
+  "contacts": [
+    {
+      "cname": "Manoj Kumar",
+      "cimageurls": ["https://ovinmano.github.io/manoj-details/3.jpg"],
+      "clocation": "Coimbatore",
+      "ctype": "Web developer",
+      "cemail": "manojrabeal123@gmail.com",
+      "cphonenumber": 7339072404,
+      "clink1": "",
+      "clink2": "",
+      "clink3": "",
+      "clink4": ""
+    }
+  ],
+  "bookings": [
+    {
+      "id": 1,
+      "bookingCode": "",
+      "name": "Hong kong palace museum",
+      "description": "Lorem ispum",
+      "regionNote": "string",
+      "userRef": "string",
+      "packageRef": "string",
+      "numberOfDays": 10,
+      "cost": 1000,
+      "passengerNumber": 10,
+      "paid": false,
+      "startAt": "string",
+      "createdAt": "string",
+      "itineraries": "string",
+      "reviews": "3.5",
+      "url": "https://youimg1.tripcdn.com/target/1lo4312000axni7v15717_C_670_376_Q70.webp?proc=source%2ftrip&proc=source%2ftrip"
+    }
+  ],
+  "agencies": [],
+  "services": [
+    {
+      "id": 1,
+      "name": "Accommodation"
+    },
+    {
+      "id": 2,
+      "name": "Food"
+    },
+    {
+      "id": 3,
+      "name": "Transportation"
+    },
+    {
+      "id": 4,
+      "name": "Activities"
+    },
+    {
+      "id": 5,
+      "name": "Guided Tours"
+    },
+    {
+      "id": 6,
+      "name": "Excursions"
+    },
+    {
+      "id": 7,
+      "name": "Spa & Wellness"
+    },
+    {
+      "id": 8,
+      "name": "Entertainment"
+    },
+    {
+      "id": 9,
+      "name": "Cruises"
+    },
+    {
+      "id": 10,
+      "name": "Car Rental"
+    }
+  ],
+  "currencies": [
+    {
+      "id": 1,
+      "name": "USD"
+    },
+    {
+      "id": 2,
+      "name": "EUR"
+    },
+    {
+      "id": 3,
+      "name": "GBP"
+    },
+    {
+      "id": 4,
+      "name": "CAD"
+    },
+    {
+      "id": 5,
+      "name": "AUD"
+    },
+    {
+      "id": 6,
+      "name": "JPY"
+    },
+    {
+      "id": 7,
+      "name": "CHF"
+    },
+    {
+      "id": 8,
+      "name": "NZD"
+    }
+  ],
+  "regions": [
+    {
+      "id": 1,
+      "currencyId": 1,
+      "superRegionId": 1,
+      "name": "North America",
+      "notes": "Some notes about North America"
+    },
+    {
+      "id": 2,
+      "currencyId": 2,
+      "superRegionId": 1,
+      "name": "Europe",
+      "notes": "Some notes about Europe"
+    },
+    {
+      "id": 3,
+      "currencyId": 3,
+      "superRegionId": 2,
+      "name": "United Kingdom",
+      "notes": "Some notes about the United Kingdom"
+    },
+    {
+      "id": 4,
+      "currencyId": 4,
+      "superRegionId": 2,
+      "name": "Canada",
+      "notes": "Some notes about Canada"
+    },
+    {
+      "id": 5,
+      "currencyId": 1,
+      "superRegionId": 1,
+      "name": "United States",
+      "notes": "Some notes about the United States"
+    },
+    {
+      "id": 6,
+      "currencyId": 2,
+      "superRegionId": 1,
+      "name": "Germany",
+      "notes": "Some notes about Germany"
+    },
+    {
+      "id": 7,
+      "currencyId": 3,
+      "superRegionId": 2,
+      "name": "France",
+      "notes": "Some notes about France"
+    },
+    {
+      "id": 8,
+      "currencyId": 4,
+      "superRegionId": 2,
+      "name": "Australia",
+      "notes": "Some notes about Australia"
+    }
+  ]
+}

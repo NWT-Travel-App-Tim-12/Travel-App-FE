@@ -1,1 +1,0 @@
-export const SESSION_USER_TOKEN = "SESSION_USER_TOKEN";
