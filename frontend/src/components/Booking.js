@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Card } from "react-bootstrap";
 import { CheckCircleOutlined, CloseCircleOutlined } from "@ant-design/icons";
 import { PackagesApi } from "../api/packagesApi";
+import { Button } from "antd";
 
 function Booking({ booking }) {
   const {
@@ -60,11 +61,14 @@ function Booking({ booking }) {
             <br />
             <small className="text-muted">Cost: </small> {cost} $
             <br />
-            <small className="text-muted">Paid: </small>{" "}
+            <small className="text-muted-paid">Paid: </small>{" "}
             {paid ? (
-              <CheckCircleOutlined color="green" />
+              <CheckCircleOutlined style={{ color: "green" }} />
             ) : (
-              <CloseCircleOutlined color="red" />
+              <>
+                <CloseCircleOutlined style={{ color: "red" }} />
+                <Button style={{ float: "right" }}>Pay now</Button>
+              </>
             )}
             <br />
           </Card.Text>
