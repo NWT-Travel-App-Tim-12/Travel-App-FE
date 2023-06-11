@@ -10,8 +10,6 @@ import ProfileScreen from "./screens/Profilescreen";
 import AdminScreen from "./screens/AdminScreen";
 import AboutScreen from "./screens/AboutScreen";
 import Footer from "./components/Footer";
-import ContactScreen from "./screens/ContactScreen";
-import BookPackage from "./screens/BookPackage";
 import BookingsScreen from "./screens/BookingsScreen";
 import { AddNewPackageScreen } from "./screens/AddNewPackageScreen";
 import { AddNewRegionScreen } from "./screens/AddNewRegionScreen";
@@ -26,7 +24,6 @@ function App() {
           <Route path="/" exact element={<LandingScreen />} />
           <Route path="/home" exact element={<HomeScreen />} />
           <Route path="/home" exact element={<LocationScreen />} />
-          <Route path="/contact" exact element={<ContactScreen />} />
           <Route path="/register" exact element={<Registerscreen />} />
           <Route path="/login" exact element={<Loginscreen />} />
           <Route path="/profile" exact element={<ProfileScreen />} />

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Booking from "../components/Bookings";
+import Booking from "../components/Booking";
 import Loader from "../components/Loader";
 import Error from "../components/Error";
 import { BookingApi } from "../api/bookingsApi";
