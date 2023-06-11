@@ -38,6 +38,19 @@
       "validTo": "2023-12-31",
       "createdAt": "2023-01-03T12:00:00Z",
       "url": "https://images.news18.com/ibnlive/uploads/2022/07/hilton-maldives-2.jpg?im=Resize,width=360,aspect=fit,type=normal?im=Resize,width=320,aspect=fit,type=normal"
+    },
+    {
+      "id": 4,
+      "regionId": "2",
+      "agentId": "2",
+      "agencyUuid": "",
+      "packageCode": "H2ts",
+      "name": "Hurgada",
+      "description": "Hey there",
+      "validFrom": "",
+      "validTo": "",
+      "createdAt": "2023-06-11T17:17:58.813Z",
+      "url": "https://158832095.g.lyrcdn.com/HotelImage/1/2567/124217_L.jpg"
     }
   ],
   "places": [
@@ -59,7 +72,14 @@
       "foodtype2": "",
       "foodhealth": "",
       "fooddescription": "",
-      "foodimgurls": ["", "", "", "", "", ""]
+      "foodimgurls": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     },
     {
       "name": "Capital O 15959 The City Park",
@@ -78,7 +98,14 @@
       "foodtype": "",
       "foodhealth": "",
       "fooddescription": "",
-      "foodimgurls": ["", "", "", "", "", ""]
+      "foodimgurls": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     },
     {
       "name": "Goa,india",
@@ -97,7 +124,14 @@
       "foodtype": "",
       "foodhealth": "",
       "fooddescription": "",
-      "foodimgurls": ["", "", "", "", "", ""]
+      "foodimgurls": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     },
     {
       "name": "Kodaikanal",
@@ -116,7 +150,14 @@
       "foodtype": "",
       "foodhealth": "",
       "fooddescription": "",
-      "foodimgurls": ["", "", "", "", "", ""]
+      "foodimgurls": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     },
     {
       "name": "Munnar,kerala",
@@ -135,44 +176,59 @@
       "foodtype": "",
       "foodhealth": "",
       "fooddescription": "",
-      "foodimgurls": ["", "", "", "", "", ""]
-    }
-  ],
-  "contacts": [
-    {
-      "cname": "Manoj Kumar",
-      "cimageurls": ["https://ovinmano.github.io/manoj-details/3.jpg"],
-      "clocation": "Coimbatore",
-      "ctype": "Web developer",
-      "cemail": "manojrabeal123@gmail.com",
-      "cphonenumber": 7339072404,
-      "clink1": "",
-      "clink2": "",
-      "clink3": "",
-      "clink4": ""
+      "foodimgurls": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     }
   ],
   "bookings": [
     {
       "id": 1,
-      "bookingCode": "",
+      "bookingCode": "HD73K",
       "name": "Hong kong palace museum",
       "description": "Lorem ispum",
       "regionNote": "string",
-      "userRef": "string",
-      "packageRef": "string",
+      "userId": "string",
+      "packageId": "string",
       "numberOfDays": 10,
       "cost": 1000,
       "passengerNumber": 10,
       "paid": false,
-      "startAt": "string",
-      "createdAt": "string",
+      "startAt": "10/05/2023",
+      "createdAt": "20/05/2023",
       "itineraries": "string",
       "reviews": "3.5",
       "url": "https://youimg1.tripcdn.com/target/1lo4312000axni7v15717_C_670_376_Q70.webp?proc=source%2ftrip&proc=source%2ftrip"
     }
   ],
-  "agencies": [],
+  "agencies": [
+    {
+      "id": 1,
+      "administrator": 1,
+      "name": "BusTourism",
+      "address": "Street 3",
+      "agencyShortName": "Bus Tour"
+    },
+    {
+      "id": 2,
+      "administrator": 2,
+      "name": "TravelWorld",
+      "address": "Avenue 5",
+      "agencyShortName": "Travel"
+    },
+    {
+      "id": 3,
+      "administrator": 3,
+      "name": "AdventureGetaway",
+      "address": "Road 7",
+      "agencyShortName": "Adventure"
+    }
+  ],
   "services": [
     {
       "id": 1,
@@ -305,6 +361,74 @@
       "superRegionId": 2,
       "name": "Australia",
       "notes": "Some notes about Australia"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "role": "admin",
+      "agencyRef": null,
+      "firstName": "John",
+      "lastName": "Doe",
+      "address": "123 Main St",
+      "email": "john@example.com",
+      "administratorAgency": null,
+      "password": "password123"
+    },
+    {
+      "id": 2,
+      "role": "user",
+      "agencyRef": null,
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "address": "456 Elm St",
+      "email": "jane@example.com",
+      "administratorAgency": null,
+      "password": "password456"
+    },
+    {
+      "id": 3,
+      "role": "user",
+      "agencyRef": null,
+      "firstName": "Mike",
+      "lastName": "Johnson",
+      "address": "789 Oak St",
+      "email": "mike@example.com",
+      "administratorAgency": null,
+      "password": "password789"
+    },
+    {
+      "id": 4,
+      "role": "agent",
+      "agencyRef": null,
+      "firstName": "Agent",
+      "lastName": "One",
+      "address": "10 Agent St",
+      "email": "agent1@example.com",
+      "administratorAgency": null,
+      "password": "agentpassword1"
+    },
+    {
+      "id": 5,
+      "role": "agent",
+      "agencyRef": null,
+      "firstName": "Agent",
+      "lastName": "Two",
+      "address": "20 Agent St",
+      "email": "agent2@example.com",
+      "administratorAgency": null,
+      "password": "agentpassword2"
+    },
+    {
+      "id": 6,
+      "role": "agent",
+      "agencyRef": null,
+      "firstName": "Agent",
+      "lastName": "Three",
+      "address": "30 Agent St",
+      "email": "agent3@example.com",
+      "administratorAgency": null,
+      "password": "agentpassword3"
     }
   ]
 }

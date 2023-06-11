@@ -134,6 +134,12 @@ body {
   transform: scale(1.1, 1.1);
 }
 
+.bookings-list tr {
+  font-size: 10px;
+}
+.ant-tabs-content-holder {
+  padding: 1rem;
+}
 .home,
 .about,
 .login,
@@ -706,6 +712,42 @@ h3,
 
 .head {
   display: flex;
+}
+
+.heading-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.heading-button button {
+  position: absolute;
+  right: 0;
+}
+.add-new-package {
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.add-new-package form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: auto;
+}
+.add-new-package > form > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-new-package > form > div > label {
+  flex: 1;
+  text-align: left;
+}
+.add-new-package > form > div > input,
+.add-new-package > form > div > select {
+  flex: 3;
 }
 
 .food-name {
