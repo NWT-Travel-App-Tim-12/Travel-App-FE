@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from "react";
 import Loader from "./Loader";
 import { BookingApi } from "../api/bookingsApi";
+import { Button } from "antd";
+import { useNavigate } from "react-router-dom";
 
 export function AdminBookingList() {
   const [bookings, setBookings] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState();
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     async function fetchData() {
@@ -22,9 +26,14 @@ export function AdminBookingList() {
     fetchData();
   }, []);
 
+  const onClick = () => navigate("/admin/new-booking");
+
   return (
     <div className="table-container">
-      <h3>Bookings</h3>
+      <div className="heading-button">
+        <h3>Bookings</h3>
+        <Button onClick={onClick}>Add new booking</Button>
+      </div>
 
       {loading && <Loader />}
 

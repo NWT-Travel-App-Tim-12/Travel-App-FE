@@ -72,7 +72,14 @@
       "foodtype2": "",
       "foodhealth": "",
       "fooddescription": "",
-      "foodimgurls": ["", "", "", "", "", ""]
+      "foodimgurls": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     },
     {
       "name": "Capital O 15959 The City Park",
@@ -91,7 +98,14 @@
       "foodtype": "",
       "foodhealth": "",
       "fooddescription": "",
-      "foodimgurls": ["", "", "", "", "", ""]
+      "foodimgurls": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     },
     {
       "name": "Goa,india",
@@ -110,7 +124,14 @@
       "foodtype": "",
       "foodhealth": "",
       "fooddescription": "",
-      "foodimgurls": ["", "", "", "", "", ""]
+      "foodimgurls": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     },
     {
       "name": "Kodaikanal",
@@ -129,7 +150,14 @@
       "foodtype": "",
       "foodhealth": "",
       "fooddescription": "",
-      "foodimgurls": ["", "", "", "", "", ""]
+      "foodimgurls": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     },
     {
       "name": "Munnar,kerala",
@@ -148,7 +176,14 @@
       "foodtype": "",
       "foodhealth": "",
       "fooddescription": "",
-      "foodimgurls": ["", "", "", "", "", ""]
+      "foodimgurls": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     }
   ],
   "bookings": [
@@ -169,6 +204,24 @@
       "itineraries": "string",
       "reviews": "3.5",
       "url": "https://youimg1.tripcdn.com/target/1lo4312000axni7v15717_C_670_376_Q70.webp?proc=source%2ftrip&proc=source%2ftrip"
+    },
+    {
+      "id": 2,
+      "bookingCode": "",
+      "name": "",
+      "description": "",
+      "regionNote": "",
+      "userId": "2",
+      "packageId": "",
+      "numberOfDays": 0,
+      "cost": 0,
+      "passengerNumber": "9",
+      "paid": false,
+      "startAt": "",
+      "createdAt": "",
+      "itineraries": "",
+      "reviews": "",
+      "url": ""
     }
   ],
   "agencies": [

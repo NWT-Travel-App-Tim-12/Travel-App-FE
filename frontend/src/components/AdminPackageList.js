@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Loader from "./Loader";
-import { BookingApi } from "../api/bookingsApi";
 import { PackagesApi } from "../api/packagesApi";
 import { Button } from "antd";
 import { useNavigate } from "react-router-dom";
