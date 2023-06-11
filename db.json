@@ -23,7 +23,7 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "validFrom": "2023-01-01",
       "validTo": "2023-12-31",
-      "createdAt": "2023-01-02T12:00:00Z",
+      "createdAt": "2023-01-02",
       "url": "https://images.thrillophilia.com/image/upload/s--vI0Q6HT9--/c_fill,g_auto,h_600,q_auto,w_975/f_auto,fl_strip_profile/v1/images/photos/000/082/497/original/1675261154_shutterstock_2148766633.jpg.jpg"
     },
     {
@@ -222,6 +222,30 @@
       "itineraries": "",
       "reviews": "",
       "url": ""
+    },
+    {
+      "id": 3,
+      "bookingCode": "",
+      "name": "PPIS",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "regionNote": "",
+      "userId": "",
+      "packageId": 2,
+      "numberOfDays": "10",
+      "cost": "10",
+      "passengerNumber": "10",
+      "paid": false,
+      "startAt": "2023-01-01",
+      "createdAt": "2023-01-02",
+      "itineraries": "",
+      "reviews": "",
+      "url": "https://images.thrillophilia.com/image/upload/s--vI0Q6HT9--/c_fill,g_auto,h_600,q_auto,w_975/f_auto,fl_strip_profile/v1/images/photos/000/082/497/original/1675261154_shutterstock_2148766633.jpg.jpg",
+      "regionId": 2,
+      "agentId": 1,
+      "agencyUuid": "22jfhuj47fjshdjshd",
+      "packageCode": "PKG002",
+      "validFrom": "2023-01-01",
+      "validTo": "2023-12-31"
     }
   ],
   "agencies": [

@@ -41,16 +41,11 @@ function App() {
             exact
             element={<AddNewRegionScreen />}
           />
-          <Route
-            path="/admin/new-booking"
-            exact
-            element={<AddNewBookingScreen />}
-          />
           <Route path="/bookings" exact element={<BookingsScreen />} />
 
           <Route path="/about" exact element={<AboutScreen />} />
 
-          <Route path="/package/:id" exact element={<BookPackage />} />
+          <Route path="/package/:id" exact element={<AddNewBookingScreen />} />
         </Routes>
       </Router>
       <Footer />

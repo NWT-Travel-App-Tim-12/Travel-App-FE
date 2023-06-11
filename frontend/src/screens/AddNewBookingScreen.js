@@ -4,6 +4,7 @@ import { Button, Form, Alert } from "react-bootstrap";
 import Input from "antd/es/input/Input";
 import { UserApi } from "../api/userApi";
 import { BookingApi } from "../api/bookingsApi";
+import { useParams } from "react-router-dom";
 
 export const AddNewBookingScreen = () => {
   const [formData, setFormData] = useState({
@@ -27,11 +28,11 @@ export const AddNewBookingScreen = () => {
 
   const [dropdownOptions, setDropdownOptions] = useState({
     regionOptions: [],
-    userOptions: [],
     packageOptions: [],
   });
 
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const { id } = useParams();
 
   async function fetchData() {
     try {
@@ -41,17 +42,22 @@ export const AddNewBookingScreen = () => {
         regionOptions: regionResponse.data,
       }));
 
-      const userResponse = await UserApi.getAllUsers();
-      setDropdownOptions((prevOptions) => ({
-        ...prevOptions,
-        userOptions: userResponse.data,
-      }));
-
       const packageResponse = await PackagesApi.getAllPackages();
       setDropdownOptions((prevOptions) => ({
         ...prevOptions,
         packageOptions: packageResponse.data,
       }));
+
+      const pkg = (await PackagesApi.getPackageById(id)).data;
+      setFormData({
+        ...formData,
+        ...pkg,
+        name: formData.name,
+        packageId: pkg.id,
+        startAt: pkg.validFrom,
+        createdAt: pkg.createdAt,
+        id: "",
+      });
     } catch (error) {
       console.log(error);
     }
@@ -99,18 +105,10 @@ export const AddNewBookingScreen = () => {
       <h4>Add new booking</h4>
       <div className="col-md-5 add-new-package">
         <hr />
+        <div className="booking-image">
+          <img src={formData.url} alt="img" />
+        </div>
         <form onSubmit={handleSubmit}>
-          <div>
-            <label htmlFor="bookingCode">Booking Code:</label>
-            <Input
-              type="text"
-              id="bookingCode"
-              name="bookingCode"
-              value={formData.bookingCode}
-              onChange={handleChange}
-            />
-          </div>
-
           <div>
             <label htmlFor="name">Name:</label>
             <Input
@@ -125,6 +123,7 @@ export const AddNewBookingScreen = () => {
           <div>
             <label htmlFor="description">Description:</label>
             <Input
+              disabled
               type="text"
               id="description"
               name="description"
@@ -134,19 +133,9 @@ export const AddNewBookingScreen = () => {
           </div>
 
           <div>
-            <label htmlFor="regionNote">Region Note:</label>
-            <Input
-              type="text"
-              id="regionNote"
-              name="regionNote"
-              value={formData.regionNote}
-              onChange={handleChange}
-            />
-          </div>
-
-          <div>
             <label htmlFor="userId">Region:</label>
             <Form.Select
+              disabled
               id="regionId"
               name="regionId"
               value={formData.regionId}
@@ -162,25 +151,9 @@ export const AddNewBookingScreen = () => {
           </div>
 
           <div>
-            <label htmlFor="userId">User:</label>
-            <Form.Select
-              id="userId"
-              name="userId"
-              value={formData.userId}
-              onChange={handleChange}
-            >
-              <option value="">Choose user</option>
-              {dropdownOptions.userOptions.map((option) => (
-                <option key={option.id} value={option.id}>
-                  {option.firstName} {option.lastName}
-                </option>
-              ))}
-            </Form.Select>
-          </div>
-
-          <div>
             <label htmlFor="packageId">Package:</label>
             <Form.Select
+              disabled
               id="packageId"
               name="packageId"
               value={formData.packageId}
@@ -218,7 +191,7 @@ export const AddNewBookingScreen = () => {
           </div>
 
           <div>
-            <label htmlFor="passengerNumber">Passenger Number:</label>
+            <label htmlFor="passengerNumber">Passengers:</label>
             <Input
               type="number"
               id="passengerNumber"
@@ -247,6 +220,7 @@ export const AddNewBookingScreen = () => {
           <div>
             <label htmlFor="startAt">Start At:</label>
             <Input
+              disabled
               type="date"
               id="startAt"
               name="startAt"
@@ -258,21 +232,11 @@ export const AddNewBookingScreen = () => {
           <div>
             <label htmlFor="createdAt">Created At:</label>
             <Input
+              disabled
               type="date"
               id="createdAt"
               name="createdAt"
               value={formData.createdAt}
-              onChange={handleChange}
-            />
-          </div>
-
-          <div>
-            <label htmlFor="url">Image URL:</label>
-            <Input
-              type="text"
-              id="url"
-              name="url"
-              value={formData.url}
               onChange={handleChange}
             />
           </div>
