@@ -727,6 +727,7 @@ h3,
 .add-new-package {
   margin: auto;
   margin-bottom: 2rem;
+  padding: 1rem;
 }
 
 .add-new-package form {
@@ -910,6 +911,7 @@ table tbody tr td {
 
 .footer {
   background-color: #e7f5ff;
+  margin-top: 1rem;
 }
 
 .footer .footer-mm {

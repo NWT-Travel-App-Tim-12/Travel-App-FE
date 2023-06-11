@@ -28,6 +28,9 @@ function Navbar() {
           <a href="/contact" className="about">
             Contact
           </a>
+          <a href="/admin" className="admin">
+            Admin panel
+          </a>
 
           {user ? (
             <>

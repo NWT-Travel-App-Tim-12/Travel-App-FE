@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Loader from "../components/Loader";
 import { PackagesApi } from "../api/packagesApi";
+import { Button } from "antd";
+import { useNavigate } from "react-router-dom";
 
 export function AdminRegionList() {
   const [regions, setRegions] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     async function fetchData() {
@@ -20,9 +24,14 @@ export function AdminRegionList() {
     fetchData();
   }, []);
 
+  const onClick = () => navigate("/admin/new-region");
+
   return (
     <div className="table-container">
-      <h3>Regions</h3>
+      <div className="heading-button">
+        <h3>Regions</h3>
+        <Button onClick={onClick}>Add new region</Button>
+      </div>
       {loading && <Loader />}
 
       <table className="bs">

@@ -10,6 +10,9 @@ const postPackage = async (pkg) => await axiosInstance.post(`/packages`, pkg);
 // regions
 const getAllRegions = async () => await axiosInstance.get("/regions");
 
+const postRegion = async (region) =>
+  await axiosInstance.post(`/regions`, region);
+
 const getRegionById = async (id) => await axiosInstance.get(`/regions/${id}`);
 
 // places
@@ -34,4 +37,5 @@ export const PackagesApi = {
   getAllRegions,
   getAllCurrencies,
   postPackage,
+  postRegion,
 };
