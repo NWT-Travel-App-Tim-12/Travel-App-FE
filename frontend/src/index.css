@@ -379,7 +379,9 @@ h3,
 .booking-image img {
   width: 15rem;
 }
-.booking-item {
+
+.text-muted-paid button {
+  float: right;
 }
 
 .grid-item {

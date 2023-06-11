@@ -181,7 +181,7 @@
       "numberOfDays": "10",
       "cost": "10",
       "passengerNumber": "10",
-      "paid": false,
+      "paid": true,
       "startAt": "2023-01-01",
       "createdAt": "2023-01-02",
       "itineraries": "",
