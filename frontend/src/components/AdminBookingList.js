@@ -5,7 +5,6 @@ import { BookingApi } from "../api/bookingsApi";
 export function AdminBookingList() {
   const [bookings, setBookings] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState();
 
   useEffect(() => {
     async function fetchData() {
@@ -16,7 +15,6 @@ export function AdminBookingList() {
       } catch (error) {
         console.log(error);
         setLoading(false);
-        setError(error);
       }
     }
     fetchData();

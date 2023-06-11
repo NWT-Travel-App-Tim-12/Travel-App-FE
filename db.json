@@ -23,7 +23,7 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "validFrom": "2023-01-01",
       "validTo": "2023-12-31",
-      "createdAt": "2023-01-02T12:00:00Z",
+      "createdAt": "2023-01-02",
       "url": "https://images.thrillophilia.com/image/upload/s--vI0Q6HT9--/c_fill,g_auto,h_600,q_auto,w_975/f_auto,fl_strip_profile/v1/images/photos/000/082/497/original/1675261154_shutterstock_2148766633.jpg.jpg"
     },
     {
@@ -72,7 +72,14 @@
       "foodtype2": "",
       "foodhealth": "",
       "fooddescription": "",
-      "foodimgurls": ["", "", "", "", "", ""]
+      "foodimgurls": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     },
     {
       "name": "Capital O 15959 The City Park",
@@ -91,7 +98,14 @@
       "foodtype": "",
       "foodhealth": "",
       "fooddescription": "",
-      "foodimgurls": ["", "", "", "", "", ""]
+      "foodimgurls": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     },
     {
       "name": "Goa,india",
@@ -110,7 +124,14 @@
       "foodtype": "",
       "foodhealth": "",
       "fooddescription": "",
-      "foodimgurls": ["", "", "", "", "", ""]
+      "foodimgurls": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     },
     {
       "name": "Kodaikanal",
@@ -129,7 +150,14 @@
       "foodtype": "",
       "foodhealth": "",
       "fooddescription": "",
-      "foodimgurls": ["", "", "", "", "", ""]
+      "foodimgurls": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     },
     {
       "name": "Munnar,kerala",
@@ -148,7 +176,14 @@
       "foodtype": "",
       "foodhealth": "",
       "fooddescription": "",
-      "foodimgurls": ["", "", "", "", "", ""]
+      "foodimgurls": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     }
   ],
   "bookings": [
@@ -169,6 +204,48 @@
       "itineraries": "string",
       "reviews": "3.5",
       "url": "https://youimg1.tripcdn.com/target/1lo4312000axni7v15717_C_670_376_Q70.webp?proc=source%2ftrip&proc=source%2ftrip"
+    },
+    {
+      "id": 2,
+      "bookingCode": "",
+      "name": "",
+      "description": "",
+      "regionNote": "",
+      "userId": "2",
+      "packageId": "",
+      "numberOfDays": 0,
+      "cost": 0,
+      "passengerNumber": "9",
+      "paid": false,
+      "startAt": "",
+      "createdAt": "",
+      "itineraries": "",
+      "reviews": "",
+      "url": ""
+    },
+    {
+      "id": 3,
+      "bookingCode": "",
+      "name": "PPIS",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "regionNote": "",
+      "userId": "",
+      "packageId": 2,
+      "numberOfDays": "10",
+      "cost": "10",
+      "passengerNumber": "10",
+      "paid": false,
+      "startAt": "2023-01-01",
+      "createdAt": "2023-01-02",
+      "itineraries": "",
+      "reviews": "",
+      "url": "https://images.thrillophilia.com/image/upload/s--vI0Q6HT9--/c_fill,g_auto,h_600,q_auto,w_975/f_auto,fl_strip_profile/v1/images/photos/000/082/497/original/1675261154_shutterstock_2148766633.jpg.jpg",
+      "regionId": 2,
+      "agentId": 1,
+      "agencyUuid": "22jfhuj47fjshdjshd",
+      "packageCode": "PKG002",
+      "validFrom": "2023-01-01",
+      "validTo": "2023-12-31"
     }
   ],
   "agencies": [

@@ -15,6 +15,7 @@ import BookPackage from "./screens/BookPackage";
 import BookingsScreen from "./screens/BookingsScreen";
 import { AddNewPackageScreen } from "./screens/AddNewPackageScreen";
 import { AddNewRegionScreen } from "./screens/AddNewRegionScreen";
+import { AddNewBookingScreen } from "./screens/AddNewBookingScreen";
 
 function App() {
   return (
@@ -44,7 +45,7 @@ function App() {
 
           <Route path="/about" exact element={<AboutScreen />} />
 
-          <Route path="/package/:id" exact element={<BookPackage />} />
+          <Route path="/package/:id" exact element={<AddNewBookingScreen />} />
         </Routes>
       </Router>
       <Footer />
