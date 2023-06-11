@@ -373,6 +373,7 @@ h3,
 .flex-container {
   display: flex;
   padding: 1rem;
+  gap: 1rem;
 }
 
 .booking-image img {
