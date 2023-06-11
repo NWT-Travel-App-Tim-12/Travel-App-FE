@@ -14,6 +14,7 @@ import ContactScreen from "./screens/ContactScreen";
 import BookPackage from "./screens/BookPackage";
 import BookingsScreen from "./screens/BookingsScreen";
 import { AddNewPackageScreen } from "./screens/AddNewPackageScreen";
+import { AddNewRegionScreen } from "./screens/AddNewRegionScreen";
 
 function App() {
   return (
@@ -34,7 +35,13 @@ function App() {
             exact
             element={<AddNewPackageScreen />}
           />
+          <Route
+            path="/admin/new-region"
+            exact
+            element={<AddNewRegionScreen />}
+          />
           <Route path="/bookings" exact element={<BookingsScreen />} />
+
           <Route path="/about" exact element={<AboutScreen />} />
 
           <Route path="/package/:id" exact element={<BookPackage />} />

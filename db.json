@@ -72,14 +72,7 @@
       "foodtype2": "",
       "foodhealth": "",
       "fooddescription": "",
-      "foodimgurls": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
+      "foodimgurls": ["", "", "", "", "", ""]
     },
     {
       "name": "Capital O 15959 The City Park",
@@ -98,14 +91,7 @@
       "foodtype": "",
       "foodhealth": "",
       "fooddescription": "",
-      "foodimgurls": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
+      "foodimgurls": ["", "", "", "", "", ""]
     },
     {
       "name": "Goa,india",
@@ -124,14 +110,7 @@
       "foodtype": "",
       "foodhealth": "",
       "fooddescription": "",
-      "foodimgurls": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
+      "foodimgurls": ["", "", "", "", "", ""]
     },
     {
       "name": "Kodaikanal",
@@ -150,14 +129,7 @@
       "foodtype": "",
       "foodhealth": "",
       "fooddescription": "",
-      "foodimgurls": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
+      "foodimgurls": ["", "", "", "", "", ""]
     },
     {
       "name": "Munnar,kerala",
@@ -176,14 +148,7 @@
       "foodtype": "",
       "foodhealth": "",
       "fooddescription": "",
-      "foodimgurls": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
+      "foodimgurls": ["", "", "", "", "", ""]
     }
   ],
   "bookings": [
@@ -361,6 +326,15 @@
       "superRegionId": 2,
       "name": "Australia",
       "notes": "Some notes about Australia"
+    },
+    {
+      "regionId": "1",
+      "currencyId": "2",
+      "superRegionId": "",
+      "name": "Middle Europe",
+      "notes": "Some notes here",
+      "createdAt": "2023-06-11T17:41:17.743Z",
+      "id": 9
     }
   ],
   "users": [
