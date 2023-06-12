@@ -7,6 +7,7 @@ import { AdminCurrencyList } from "../components/AdminCurrencyList";
 import { AdminServiceList } from "../components/AdminServiceList";
 import { AdminPackageList } from "../components/AdminPackageList";
 import { AdminUserList } from "../components/AdminUserList";
+import { AdminItineraryList } from "../components/AdminItineraryList";
 
 const { TabPane } = Tabs;
 
@@ -43,6 +44,9 @@ function AdminScreen() {
         </TabPane>
         <TabPane tab="Services" key="7">
           <AdminServiceList />
+        </TabPane>
+        <TabPane tab="Itineraries" key="8">
+          <AdminItineraryList />
         </TabPane>
       </Tabs>
     </div>

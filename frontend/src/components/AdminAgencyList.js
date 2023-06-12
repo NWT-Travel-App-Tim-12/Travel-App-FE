@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import Loader from "../components/Loader";
-import { PackagesApi } from "../api/packagesApi";
 import { UserApi } from "../api/userApi";
+import { Button } from "antd";
+import { useNavigate } from "react-router-dom";
 
 export function AdminAgencyList() {
   const [agencies, setAgencies] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState();
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     async function fetchData() {
@@ -18,15 +19,19 @@ export function AdminAgencyList() {
       } catch (error) {
         console.log(error);
         setLoading(false);
-        setError(error);
       }
     }
     fetchData();
   }, []);
 
+  const onClick = () => navigate("/admin/new-agency");
+
   return (
     <div className="table-container">
-      <h3>Agencies</h3>
+      <div className="heading-button">
+        <h3>Agencies</h3>
+        <Button onClick={onClick}>Add new agency</Button>
+      </div>
 
       {loading && <Loader />}
 
