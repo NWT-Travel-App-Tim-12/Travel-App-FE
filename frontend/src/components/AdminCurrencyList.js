@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import { useNavigate } from "react-router-dom";
 import Loader from "../components/Loader";
+import { Button } from "antd";
 import { PackagesApi } from "../api/packagesApi";
 
 export function AdminCurrencyList() {
   const [currencies, setCurrencies] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState();
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     async function fetchData() {
@@ -17,15 +19,19 @@ export function AdminCurrencyList() {
       } catch (error) {
         console.log(error);
         setLoading(false);
-        setError(error);
       }
     }
     fetchData();
   }, []);
 
+  const onClick = () => navigate("/admin/new-currency");
+
   return (
     <div className="table-container">
-      <h3>Currencies</h3>
+      <div className="heading-button">
+        <h3>Currencies</h3>
+        <Button onClick={onClick}>Add new currency</Button>
+      </div>
 
       {loading && <Loader />}
 

@@ -15,6 +15,7 @@ import { AddNewPackageScreen } from "./screens/AddNewPackageScreen";
 import { AddNewRegionScreen } from "./screens/AddNewRegionScreen";
 import { AddNewBookingScreen } from "./screens/AddNewBookingScreen";
 import { AddNewAgencyScreen } from "./screens/AddNewAgencyScreen";
+import { AddNewCurrencyScreen } from "./screens/AddNewCurrencyScreen";
 
 function App() {
   return (
@@ -29,13 +30,13 @@ function App() {
           <Route path="/login" exact element={<LoginScreen />} />
           <Route path="/profile" exact element={<ProfileScreen />} />
           <Route path="/admin" exact element={<AdminScreen />} />
-          <Route
-            path="/admin/new-package"
-            exact
-            element={<AddNewPackageScreen />}
-          />
+          <Route path="/admin/new-package" element={<AddNewPackageScreen />} />
           <Route path="/admin/new-region" element={<AddNewRegionScreen />} />
           <Route path="/admin/new-agency" element={<AddNewAgencyScreen />} />
+          <Route
+            path="/admin/new-currency"
+            element={<AddNewCurrencyScreen />}
+          />
           <Route path="/bookings" exact element={<BookingsScreen />} />
           <Route path="/about" exact element={<AboutScreen />} />
           <Route path="/package/:id" exact element={<AddNewBookingScreen />} />

@@ -32,6 +32,9 @@ const getItinerariesByIds = async (ids) =>
 const getCurrencyById = async (id) =>
   await axiosInstance.get(`/currencies/${id}`);
 
+const postCurrency = async (currency) =>
+  await axiosInstance.post(`/currencies`, currency);
+
 const getAllCurrencies = async () => await axiosInstance.get("/currencies");
 
 export const PackagesApi = {
@@ -47,4 +50,5 @@ export const PackagesApi = {
   postRegion,
   getAllItineraries,
   getItinerariesByIds,
+  postCurrency,
 };
