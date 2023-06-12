@@ -72,7 +72,14 @@
       "foodtype2": "",
       "foodhealth": "",
       "fooddescription": "",
-      "foodimgurls": ["", "", "", "", "", ""]
+      "foodimgurls": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     },
     {
       "name": "Capital O 15959 The City Park",
@@ -91,7 +98,14 @@
       "foodtype": "",
       "foodhealth": "",
       "fooddescription": "",
-      "foodimgurls": ["", "", "", "", "", ""]
+      "foodimgurls": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     },
     {
       "name": "Goa,india",
@@ -110,7 +124,14 @@
       "foodtype": "",
       "foodhealth": "",
       "fooddescription": "",
-      "foodimgurls": ["", "", "", "", "", ""]
+      "foodimgurls": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     },
     {
       "name": "Kodaikanal",
@@ -129,7 +150,14 @@
       "foodtype": "",
       "foodhealth": "",
       "fooddescription": "",
-      "foodimgurls": ["", "", "", "", "", ""]
+      "foodimgurls": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     },
     {
       "name": "Munnar,kerala",
@@ -148,7 +176,14 @@
       "foodtype": "",
       "foodhealth": "",
       "fooddescription": "",
-      "foodimgurls": ["", "", "", "", "", ""]
+      "foodimgurls": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     }
   ],
   "bookings": [
@@ -166,7 +201,11 @@
       "paid": false,
       "startAt": "10/05/2023",
       "createdAt": "20/05/2023",
-      "itineraries": "string",
+      "itineraries": [
+        1,
+        2,
+        3
+      ],
       "reviews": "3.5",
       "url": "https://youimg1.tripcdn.com/target/1lo4312000axni7v15717_C_670_376_Q70.webp?proc=source%2ftrip&proc=source%2ftrip"
     },
@@ -184,7 +223,9 @@
       "paid": true,
       "startAt": "2023-01-01",
       "createdAt": "2023-01-02",
-      "itineraries": "",
+      "itineraries": [
+        2
+      ],
       "reviews": "",
       "url": "https://images.thrillophilia.com/image/upload/s--vI0Q6HT9--/c_fill,g_auto,h_600,q_auto,w_975/f_auto,fl_strip_profile/v1/images/photos/000/082/497/original/1675261154_shutterstock_2148766633.jpg.jpg",
       "regionId": 2,
@@ -193,6 +234,33 @@
       "packageCode": "PKG002",
       "validFrom": "2023-01-01",
       "validTo": "2023-12-31"
+    },
+    {
+      "id": 4,
+      "bookingCode": "",
+      "name": "My Hurgada",
+      "description": "Hey there",
+      "regionNote": "",
+      "userId": "",
+      "packageId": 4,
+      "numberOfDays": "13",
+      "cost": "12823",
+      "passengerNumber": "10",
+      "paid": false,
+      "startAt": "",
+      "createdAt": "2023-06-11T17:17:58.813Z",
+      "itineraries": [
+        2,
+        3
+      ],
+      "reviews": "",
+      "url": "https://158832095.g.lyrcdn.com/HotelImage/1/2567/124217_L.jpg",
+      "regionId": "2",
+      "agentId": "2",
+      "agencyUuid": "",
+      "packageCode": "H2ts",
+      "validFrom": "",
+      "validTo": ""
     }
   ],
   "agencies": [
@@ -216,6 +284,13 @@
       "name": "AdventureGetaway",
       "address": "Road 7",
       "agencyShortName": "Adventure"
+    },
+    {
+      "administrator": "1",
+      "name": "HotelRooom",
+      "address": "Street 172.",
+      "agencyShortName": "Roomy",
+      "id": 4
     }
   ],
   "services": [
@@ -359,6 +434,13 @@
       "notes": "Some notes here",
       "createdAt": "2023-06-11T17:41:17.743Z",
       "id": 9
+    },
+    {
+      "administrator": 0,
+      "name": "",
+      "address": "",
+      "agencyShortName": "",
+      "id": 10
     }
   ],
   "users": [
@@ -427,6 +509,41 @@
       "email": "agent3@example.com",
       "administratorAgency": null,
       "password": "agentpassword3"
+    }
+  ],
+  "itineraries": [
+    {
+      "id": 1,
+      "bookingId": 1,
+      "serviceId": 1,
+      "date": "2023-05-20",
+      "day": 1,
+      "capacity": 2,
+      "region": "Paris",
+      "note": "Great hotel in the city center",
+      "serviceType": "Accommodation"
+    },
+    {
+      "id": 2,
+      "bookingId": 2,
+      "serviceId": 2,
+      "date": "2023-06-10",
+      "day": 2,
+      "capacity": 4,
+      "region": "Rome",
+      "note": "Authentic Italian cuisine",
+      "serviceType": "Dining"
+    },
+    {
+      "id": 3,
+      "bookingId": 3,
+      "serviceId": 3,
+      "date": "2023-07-05",
+      "day": 3,
+      "capacity": 10,
+      "region": "Barcelona",
+      "note": "Explore the city's famous landmarks",
+      "serviceType": "Sightseeing"
     }
   ]
 }

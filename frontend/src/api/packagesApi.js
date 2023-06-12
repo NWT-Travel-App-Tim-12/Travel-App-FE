@@ -21,6 +21,13 @@ const getAllPlaces = async () => await axiosInstance.get("/places");
 // services
 const getAllServices = async () => await axiosInstance.get("/services");
 
+// itineraries
+const getAllItineraries = async () => await axiosInstance.get("/itineraries");
+
+const getItinerariesByIds = async (ids) =>
+  await axiosInstance.get(
+    `/itineraries?${ids.map((id) => `id=${id}`).join("&")}`
+  );
 // currency
 const getCurrencyById = async (id) =>
   await axiosInstance.get(`/currencies/${id}`);
@@ -38,4 +45,6 @@ export const PackagesApi = {
   getAllCurrencies,
   postPackage,
   postRegion,
+  getAllItineraries,
+  getItinerariesByIds,
 };

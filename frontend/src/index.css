@@ -138,7 +138,7 @@ body {
   font-size: 10px;
 }
 .ant-tabs-content-holder {
-  padding: 1rem;
+  padding: 2rem;
 }
 .home,
 .about,
@@ -181,10 +181,12 @@ body {
 }
 
 .header-img img {
-  width: 95%;
+  width: 65%;
   border-radius: 10px;
 }
-
+.carousel.slide {
+  margin-top: 2rem;
+}
 /* search */
 .search {
   margin-top: -20px;
@@ -340,6 +342,7 @@ h3,
   padding: 6px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin: auto;
+  margin: 2rem auto;
 }
 
 .loc-input {
@@ -465,7 +468,7 @@ h3,
 }
 
 .rl {
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 .rlb {
@@ -476,7 +479,7 @@ h3,
   border: none;
   outline: none;
   letter-spacing: 2px;
-  width: 40%;
+  width: 30%;
   color: #000;
   box-shadow: 4px 2px 10px 0px rgba(30, 30, 32, 0.678);
   font-size: 20px;
@@ -491,10 +494,10 @@ h3,
 .form {
   background: transparent;
   outline: transparent;
-  margin-top: 40px;
+  margin-top: 20px;
   border: none;
   font-size: 20px;
-  width: 40%;
+  width: 30%;
   border-bottom: 3px solid rgb(92, 88, 88);
 }
 
@@ -504,7 +507,7 @@ h3,
 }
 
 .form::placeholder {
-  font-size: 20px;
+  font-size: 15px;
   letter-spacing: 2px;
   color: #000;
 }

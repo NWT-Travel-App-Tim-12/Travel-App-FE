@@ -16,10 +16,12 @@ function Booking({ booking }) {
     passengerNumber,
     numberOfDays,
     cost,
+    itineraries,
   } = booking;
 
   const [pkg, setPkg] = React.useState({});
   const [region, setRegion] = React.useState({});
+  const [itineraryList, setItineraryList] = React.useState([]);
 
   const fetchData = async () => {
     const data = (await PackagesApi.getPackageById(packageId)).data;
@@ -27,6 +29,10 @@ function Booking({ booking }) {
     console.log(data);
     const regionData = (await PackagesApi.getRegionById(data.regionId)).data;
     setRegion(regionData);
+    const itinerariesResponse = (
+      await PackagesApi.getItinerariesByIds(itineraries)
+    ).data;
+    setItineraryList(itinerariesResponse);
   };
 
   useEffect(() => {
@@ -34,11 +40,11 @@ function Booking({ booking }) {
   }, []);
   return (
     <div className="">
-      <Card style={{ width: "25rem" }}>
+      <Card style={{ width: "20rem" }}>
         <Card.Img
           variant="top"
           style={{
-            maxHeight: "14rem",
+            maxHeight: "12rem",
           }}
           src={url}
         />
@@ -60,6 +66,17 @@ function Booking({ booking }) {
             <small className="text-muted">Reviews: </small> {reviews}
             <br />
             <small className="text-muted">Cost: </small> {cost} $
+            <br />
+            <small className="text-muted">Itineraries: </small>{" "}
+            {itineraryList.map((it, index) => {
+              if (index < itineraryList.length - 1)
+                return (
+                  <>
+                    {it.region} <small className="text-muted"> - </small>
+                  </>
+                );
+              return it.region;
+            })}
             <br />
             <small className="text-muted-paid">Paid: </small>{" "}
             {paid ? (

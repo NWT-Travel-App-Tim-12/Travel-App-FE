@@ -5,7 +5,7 @@ import HomeScreen from "./screens/Homescreen";
 import Navbar from "./components/Navbar";
 import LocationScreen from "./screens/PackagesScreen";
 import Registerscreen from "./screens/Registerscreen";
-import Loginscreen from "./screens/Loginscreen";
+import { LoginScreen } from "./screens/LoginScreen";
 import ProfileScreen from "./screens/Profilescreen";
 import AdminScreen from "./screens/AdminScreen";
 import AboutScreen from "./screens/AboutScreen";
@@ -14,6 +14,7 @@ import BookingsScreen from "./screens/BookingsScreen";
 import { AddNewPackageScreen } from "./screens/AddNewPackageScreen";
 import { AddNewRegionScreen } from "./screens/AddNewRegionScreen";
 import { AddNewBookingScreen } from "./screens/AddNewBookingScreen";
+import { AddNewAgencyScreen } from "./screens/AddNewAgencyScreen";
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
           <Route path="/home" exact element={<HomeScreen />} />
           <Route path="/home" exact element={<LocationScreen />} />
           <Route path="/register" exact element={<Registerscreen />} />
-          <Route path="/login" exact element={<Loginscreen />} />
+          <Route path="/login" exact element={<LoginScreen />} />
           <Route path="/profile" exact element={<ProfileScreen />} />
           <Route path="/admin" exact element={<AdminScreen />} />
           <Route
@@ -33,15 +34,10 @@ function App() {
             exact
             element={<AddNewPackageScreen />}
           />
-          <Route
-            path="/admin/new-region"
-            exact
-            element={<AddNewRegionScreen />}
-          />
+          <Route path="/admin/new-region" element={<AddNewRegionScreen />} />
+          <Route path="/admin/new-agency" element={<AddNewAgencyScreen />} />
           <Route path="/bookings" exact element={<BookingsScreen />} />
-
           <Route path="/about" exact element={<AboutScreen />} />
-
           <Route path="/package/:id" exact element={<AddNewBookingScreen />} />
         </Routes>
       </Router>
