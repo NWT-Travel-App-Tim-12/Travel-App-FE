@@ -181,10 +181,12 @@ body {
 }
 
 .header-img img {
-  width: 95%;
+  width: 65%;
   border-radius: 10px;
 }
-
+.carousel.slide {
+  margin-top: 2rem;
+}
 /* search */
 .search {
   margin-top: -20px;
@@ -340,6 +342,7 @@ h3,
   padding: 6px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin: auto;
+  margin: 2rem auto;
 }
 
 .loc-input {
