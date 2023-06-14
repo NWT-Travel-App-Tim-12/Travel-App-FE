@@ -18,6 +18,7 @@ import { AddNewAgencyScreen } from "./screens/AddNewAgencyScreen";
 import { AddNewCurrencyScreen } from "./screens/AddNewCurrencyScreen";
 import { Session } from "./api/sessionStorage";
 import React, { useState } from "react";
+import PaymentScreen from "./screens/PaymentScreen";
 
 export const UserContext = React.createContext({
   user: null,
@@ -65,6 +66,7 @@ function App() {
                       path="/package/:id"
                       element={<AddNewBookingScreen />}
                     />
+                    <Route path="/payment/:bookingId" element={<PaymentScreen/>}></Route>
                   </Routes>
                 </Layout>
               }

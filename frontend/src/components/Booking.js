@@ -18,6 +18,7 @@ function Booking({ booking }) {
     numberOfDays,
     cost,
     itineraries,
+    id
   } = booking;
 
   const [pkg, setPkg] = React.useState({});
@@ -86,7 +87,8 @@ function Booking({ booking }) {
             ) : (
               <>
                 <CloseCircleOutlined style={{ color: "red" }} />
-                <Button style={{ float: "right" }}>Pay now</Button>
+                <Button style={{ float: "right" }}
+                onClick={()=>{window.location.href = `/payment/${id}`;}}>Pay now</Button>
               </>
             )}
             <br />
