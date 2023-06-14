@@ -3,6 +3,7 @@ import { Card } from "react-bootstrap";
 import { CheckCircleOutlined, CloseCircleOutlined } from "@ant-design/icons";
 import { PackagesApi } from "../api/packagesApi";
 import { Button } from "antd";
+import moment from "moment";
 
 function Booking({ booking }) {
   const {
@@ -53,7 +54,8 @@ function Booking({ booking }) {
           <Card.Text style={{ textAlign: "left" }}>
             <small className="text-muted">Package name: </small> {pkg?.name}
             <br />
-            <small className="text-muted">Starts at: </small> {startAt}
+            <small className="text-muted">Starts at: </small>{" "}
+            {moment(startAt).format("DD-MM-YYYY")}
             <br />
             <small className="text-muted">Number of days: </small>{" "}
             {numberOfDays}
