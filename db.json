@@ -68,7 +68,11 @@
       "paid": false,
       "startAt": "10/05/2023",
       "createdAt": "20/05/2023",
-      "itineraries": [1, 2, 3],
+      "itineraries": [
+        1,
+        2,
+        3
+      ],
       "reviews": "3.5",
       "url": "https://youimg1.tripcdn.com/target/1lo4312000axni7v15717_C_670_376_Q70.webp?proc=source%2ftrip&proc=source%2ftrip",
       "validFrom": "2023-05-05",
@@ -88,7 +92,9 @@
       "paid": true,
       "startAt": "2023-01-01",
       "createdAt": "2023-01-02",
-      "itineraries": [2],
+      "itineraries": [
+        2
+      ],
       "reviews": "",
       "url": "https://images.thrillophilia.com/image/upload/s--vI0Q6HT9--/c_fill,g_auto,h_600,q_auto,w_975/f_auto,fl_strip_profile/v1/images/photos/000/082/497/original/1675261154_shutterstock_2148766633.jpg.jpg",
       "regionId": 2,
@@ -112,7 +118,10 @@
       "paid": false,
       "startAt": "2023-06-11",
       "createdAt": "2023-06-11",
-      "itineraries": [2, 3],
+      "itineraries": [
+        2,
+        3
+      ],
       "reviews": "",
       "url": "https://158832095.g.lyrcdn.com/HotelImage/1/2567/124217_L.jpg",
       "regionId": "2",
@@ -121,6 +130,30 @@
       "packageCode": "H2ts",
       "validFrom": "2023-03-12",
       "validTo": "2023-10-10"
+    },
+    {
+      "id": 5,
+      "bookingCode": "",
+      "name": "",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "regionNote": "",
+      "userId": "",
+      "packageId": 1,
+      "numberOfDays": 0,
+      "cost": 0,
+      "passengerNumber": 0,
+      "paid": false,
+      "startAt": "2023-01-01",
+      "createdAt": "2023-01-01T12:00:00Z",
+      "itineraries": "",
+      "reviews": "",
+      "url": "https://youimg1.tripcdn.com/target/1lo4312000axni7v15717_C_670_376_Q70.webp?proc=source%2ftrip&proc=source%2ftrip",
+      "regionId": 1,
+      "agentId": 1,
+      "agencyUuid": "22jfhuj47fjs73bdjsj",
+      "packageCode": "PKG001",
+      "validFrom": "2023-01-01",
+      "validTo": "2023-12-31"
     }
   ],
   "agencies": [
@@ -369,6 +402,39 @@
       "email": "agent3@example.com",
       "administratorAgency": null,
       "password": "agentpassword3"
+    },
+    {
+      "id": 7,
+      "role": "agent",
+      "agencyRef": null,
+      "firstName": "Agent",
+      "lastName": "Agent",
+      "address": "30 Agent St",
+      "email": "agent@agent.com",
+      "administratorAgency": null,
+      "password": "agent123"
+    },
+    {
+      "id": 8,
+      "role": "admin",
+      "agencyRef": null,
+      "firstName": "Admin",
+      "lastName": "Admin",
+      "address": "30 Admin St",
+      "email": "admin@admin.com",
+      "administratorAgency": null,
+      "password": "admin123"
+    },
+    {
+      "id": 9,
+      "role": "user",
+      "agencyRef": null,
+      "firstName": "User",
+      "lastName": "User",
+      "address": "30 User St",
+      "email": "user@user.com",
+      "administratorAgency": null,
+      "password": "admin123"
     }
   ],
   "itineraries": [

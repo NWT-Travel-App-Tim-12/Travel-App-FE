@@ -31,7 +31,7 @@ function Booking({ booking }) {
     const regionData = (await PackagesApi.getRegionById(data.regionId)).data;
     setRegion(regionData);
     const itinerariesResponse = (
-      await PackagesApi.getItinerariesByIds(itineraries)
+      await PackagesApi.getItinerariesByIds(itineraries || [])
     ).data;
     setItineraryList(itinerariesResponse);
   };

@@ -33,20 +33,20 @@ function AdminScreen() {
         <TabPane tab="Packages" key="3">
           <AdminPackageList />
         </TabPane>
-        <TabPane tab="Agencies" key="4">
-          <AdminAgencyList />
-        </TabPane>
-        <TabPane tab="Users" key="5">
-          <AdminUserList />
-        </TabPane>
-        <TabPane tab="Currencies" key="6">
+        <TabPane tab="Currencies" key="4">
           <AdminCurrencyList />
         </TabPane>
-        <TabPane tab="Services" key="7">
+        <TabPane tab="Services" key="5">
           <AdminServiceList />
         </TabPane>
-        <TabPane tab="Itineraries" key="8">
+        <TabPane tab="Itineraries" key="6">
           <AdminItineraryList />
+        </TabPane>
+        <TabPane tab="Agencies" key="7">
+          <AdminAgencyList />
+        </TabPane>
+        <TabPane tab="Users" key="8">
+          <AdminUserList />
         </TabPane>
       </Tabs>
     </div>
