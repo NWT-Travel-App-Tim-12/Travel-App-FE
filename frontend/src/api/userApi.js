@@ -10,9 +10,19 @@ const getAllAdministrators = async () =>
 const postAgency = async (agency) =>
   await axiosInstance.post("/agencies", agency);
 
+const postUser = async (user) => await axiosInstance.post("/users", user);
+
+const getUserById = async (id) => await axiosInstance.get(`/users?id=${id}`);
+
+const getUserByEmail = async (email) =>
+  await axiosInstance.get(`/users?email=${email}`);
+
 export const UserApi = {
   getAllUsers,
   getAllAgencies,
   getAllAdministrators,
   postAgency,
+  postUser,
+  getUserById,
+  getUserByEmail,
 };

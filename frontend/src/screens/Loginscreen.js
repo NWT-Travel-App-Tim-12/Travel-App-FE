@@ -1,12 +1,16 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React, { useState, useContext } from "react";
 import Loader from "../components/Loader";
 import Error from "../components/Error";
+import { UserApi } from "../api/userApi";
+import { Session } from "../api/sessionStorage";
+import { useNavigate } from "react-router-dom";
+import { UserContext } from "../App";
 
 export function LoginScreen() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const navigate = useNavigate();
+  const value = useContext(UserContext);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState();
 
@@ -17,11 +21,16 @@ export function LoginScreen() {
     };
     try {
       setLoading(true);
-      const result = (await axios.post("/api/users/login", user)).data;
+      const result = (await UserApi.getUserByEmail(email)).data;
       setLoading(false);
-
-      localStorage.setItem("currentUser", JSON.stringify(result));
-      window.location.href = "/";
+      console.log(result);
+      if (result?.length) {
+        Session.setUser(result[0]);
+        value?.setUser(result[0]);
+        navigate("/");
+      } else {
+        setError(true);
+      }
     } catch (error) {
       console.log(error);
       setLoading(false);
@@ -33,7 +42,9 @@ export function LoginScreen() {
     <div className="gifs">
       <div className="glass login-page">
         {loading && <Loader />}
-        {error && <Error message="Invalid" />}
+        {error && (
+          <Error message="Invalid email or password, please try again!" />
+        )}
         <center>
           <h2 className="rl">Login</h2>
         </center>

@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Session } from "../api/sessionStorage";
+import { UserContext } from "../App";
+import { Link } from "react-router-dom";
 
 function Navbar() {
-  const user = JSON.parse(localStorage.getItem("currentUser"));
+  const value = useContext(UserContext);
 
   function logout() {
-    localStorage.removeItem("currentUser");
+    Session.removeUser();
     window.location.href = "/login";
   }
 
@@ -12,21 +15,33 @@ function Navbar() {
     <div className="header">
       <nav className="nav">
         <h1 className="nav-title">
-          <a href="/home">Travel Agency</a>
+          <Link to="/home">Travel Agency</Link>
         </h1>
 
         <div className="nav-menu">
-          <a href="/home" className="home">
+          <Link to="/home" className="home">
             Home
-          </a>
-          <a href="/bookings" className="bookings">
-            Your Bookings
-          </a>
-          <a href="/about" className="about">
+          </Link>
+          {value.user && (
+            <Link to="/bookings" className="bookings">
+              Your Bookings
+            </Link>
+          )}
+          {value.user?.role === "admin" && (
+            <Link to="/admin" className="about">
+              Admin Panel
+            </Link>
+          )}
+          {value.user?.role === "agent" && (
+            <Link to="/agent" className="about">
+              Agent Panel
+            </Link>
+          )}
+          <Link to="/about" className="about">
             About
-          </a>
+          </Link>
 
-          {user ? (
+          {value.user ? (
             <>
               <div className="dropdown">
                 <button
@@ -38,30 +53,30 @@ function Navbar() {
                   aria-expanded="false"
                 >
                   <i className="fa-solid fa-user"></i>
-                  {user.name}
+                  {value.user.name}
                   <i className="fa-sharp fa-solid fa-caret-down"></i>
                 </button>
                 <div
                   className="dropdown-menu"
                   aria-labelledby="dropdownMenuButton"
                 >
-                  <a className="dropdown-item" href="/profile">
+                  <Link className="dropdown-item" to="/profile">
                     Profile
-                  </a>
-                  <a className="dropdown-item" href="#" onClick={logout}>
+                  </Link>
+                  <Link className="dropdown-item" to="#" onClick={logout}>
                     Logout
-                  </a>
+                  </Link>
                 </div>
               </div>
             </>
           ) : (
             <>
-              <a href="/register" className="pay">
+              <Link to="/register" className="pay">
                 Register
-              </a>
-              <a href="/login" className="pay">
+              </Link>
+              <Link to="/login" className="pay">
                 Login
-              </a>
+              </Link>
             </>
           )}
         </div>
