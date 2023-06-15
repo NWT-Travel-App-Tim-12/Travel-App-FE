@@ -18,7 +18,7 @@ function Booking({ booking }) {
     numberOfDays,
     cost,
     itineraries,
-    id
+    id,
   } = booking;
 
   const [pkg, setPkg] = React.useState({});
@@ -68,7 +68,7 @@ function Booking({ booking }) {
             <br />
             <small className="text-muted">Reviews: </small> {reviews}
             <br />
-            <small className="text-muted">Cost: </small> {cost} $
+            <small className="text-muted">Cost: </small> {pkg?.cost} $
             <br />
             <small className="text-muted">Itineraries: </small>{" "}
             {itineraryList.map((it, index) => {
@@ -87,8 +87,14 @@ function Booking({ booking }) {
             ) : (
               <>
                 <CloseCircleOutlined style={{ color: "red" }} />
-                <Button style={{ float: "right" }}
-                onClick={()=>{window.location.href = `/payment/${id}`;}}>Pay now</Button>
+                <Button
+                  style={{ float: "right" }}
+                  onClick={() => {
+                    window.location.href = `/payment/${id}`;
+                  }}
+                >
+                  Pay now
+                </Button>
               </>
             )}
             <br />

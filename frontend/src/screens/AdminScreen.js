@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 import { Tabs } from "antd";
 import { AdminBookingList } from "../components/AdminBookingList";
 import { AdminAgencyList } from "../components/AdminAgencyList";
@@ -8,10 +8,11 @@ import { AdminServiceList } from "../components/AdminServiceList";
 import { AdminPackageList } from "../components/AdminPackageList";
 import { AdminUserList } from "../components/AdminUserList";
 import { AdminItineraryList } from "../components/AdminItineraryList";
-
+import { UserContext } from "../App";
 const { TabPane } = Tabs;
 
 function AdminScreen() {
+  const value = useContext(UserContext);
   useEffect(() => {
     // if (!JSON.parse(localStorage.getItem("currentUser")).isAdmin) {
     //     window.location.href = "/home";
@@ -42,12 +43,16 @@ function AdminScreen() {
         <TabPane tab="Itineraries" key="6">
           <AdminItineraryList />
         </TabPane>
-        <TabPane tab="Agencies" key="7">
-          <AdminAgencyList />
-        </TabPane>
-        <TabPane tab="Users" key="8">
-          <AdminUserList />
-        </TabPane>
+        {value?.user?.role === "admin" && (
+          <>
+            <TabPane tab="Agencies" key="7">
+              <AdminAgencyList />
+            </TabPane>
+            <TabPane tab="Users" key="8">
+              <AdminUserList />
+            </TabPane>
+          </>
+        )}
       </Tabs>
     </div>
   );

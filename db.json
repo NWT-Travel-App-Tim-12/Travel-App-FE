@@ -2,11 +2,12 @@
   "packages": [
     {
       "id": 1,
-      "regionId": 1,
+      "regionId": 11,
       "agentId": 1,
       "agencyUuid": "22jfhuj47fjs73bdjsj",
       "packageCode": "PKG001",
-      "name": "Package 1",
+      "name": "Hong Kong Trip",
+      "cost": 1728,
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "validFrom": "2023-01-01",
       "validTo": "2023-12-31",
@@ -15,24 +16,26 @@
     },
     {
       "id": 2,
-      "regionId": 2,
+      "regionId": 11,
       "agentId": 1,
       "agencyUuid": "22jfhuj47fjshdjshd",
       "packageCode": "PKG002",
       "name": "Trip to Maldives",
+      "cost": 1999,
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "validFrom": "2023-01-01",
-      "validTo": "2023-12-31",
+      "validFrom": "2023-06-01",
+      "validTo": "2023-07-01",
       "createdAt": "2023-01-02",
       "url": "https://images.thrillophilia.com/image/upload/s--vI0Q6HT9--/c_fill,g_auto,h_600,q_auto,w_975/f_auto,fl_strip_profile/v1/images/photos/000/082/497/original/1675261154_shutterstock_2148766633.jpg.jpg"
     },
     {
       "id": 3,
-      "regionId": 1,
+      "regionId": 11,
       "agentId": 1,
       "agencyUuid": "22jfhuj47fjs37dj28d",
       "packageCode": "PKG003",
       "name": "Best Maldives Hotels",
+      "cost": 1889,
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "validFrom": "2023-01-01",
       "validTo": "2023-12-31",
@@ -41,16 +44,44 @@
     },
     {
       "id": 4,
-      "regionId": "2",
+      "regionId": 10,
       "agentId": "2",
       "agencyUuid": "",
       "packageCode": "H2ts",
       "name": "Hurgada",
       "description": "Hey there",
-      "validFrom": "",
-      "validTo": "",
+      "validFrom": "2023-04-27",
+      "validTo": "2023-06-27",
       "createdAt": "2023-06-11T17:17:58.813Z",
       "url": "https://158832095.g.lyrcdn.com/HotelImage/1/2567/124217_L.jpg"
+    },
+    {
+      "id": 5,
+      "regionId": 10,
+      "agentId": "2",
+      "agencyUuid": "",
+      "cost": 1999,
+      "packageCode": "H2ts",
+      "name": "Pyramids of Giza",
+      "description": "The Great Pyramid of Giza is the largest Egyptian pyramid and served as the tomb of pharaoh Khufu, who ruled under the Fourth Dynasty of the Old Kingdom.",
+      "validFrom": "2023-08-29",
+      "validTo": "2023-09-27",
+      "createdAt": "2023-06-11",
+      "url": "https://www.planetware.com/photos-large/EGY/egypt-cairo-pyramids-of-giza-and%20camels-2.jpg"
+    },
+    {
+      "id": 5,
+      "regionId": 11,
+      "agentId": "2",
+      "agencyUuid": "",
+      "packageCode": "H2ts",
+      "cost": 998,
+      "name": "Trip to Dubai",
+      "description": "The history of human settlement in the area now defined by the United Arab Emirates is rich and complex, and points to extensive trading links between the civilisations of the Indus Valley and Mesopotamia, but also as far afield as the Levant.",
+      "validFrom": "2023-05-15",
+      "validTo": "2023-06-27",
+      "createdAt": "2023-06-11",
+      "url": "https://media.cnn.com/api/v1/images/stellar/prod/200924183413-dubai-9-1.jpg?q=w_1350,h_900,x_125,y_0,c_crop"
     }
   ],
   "bookings": [
@@ -58,22 +89,17 @@
       "id": 1,
       "bookingCode": "HD73K",
       "name": "Hong kong palace museum",
-      "description": "Lorem ispum",
+      "description": "The special exhibition marks the debut of the Hong Kong Palace Museum’s permanent collection at a major special exhibition and is the biggest exhibition on ancient gold artefacts in Hong Kong in recent years.",
       "regionNote": "Some note here for regeion",
-      "userId": "string",
-      "packageId": "1",
+      "userId": 8,
+      "packageId": 1,
       "numberOfDays": 10,
-      "cost": 1000,
       "passengerNumber": 10,
       "paid": false,
       "startAt": "10/05/2023",
       "createdAt": "20/05/2023",
-      "itineraries": [
-        1,
-        2,
-        3
-      ],
-      "reviews": "3.5",
+      "itineraries": [5, 6],
+      "reviews": "4.5",
       "url": "https://youimg1.tripcdn.com/target/1lo4312000axni7v15717_C_670_376_Q70.webp?proc=source%2ftrip&proc=source%2ftrip",
       "validFrom": "2023-05-05",
       "validTo": "2023-05-20"
@@ -81,54 +107,47 @@
     {
       "id": 3,
       "bookingCode": "",
-      "name": "PPIS",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "name": "Maldives",
+      "description": "The Maldives officially the Republic of Maldives is an archipelagic state and country in South Asia, situated in the Indian Ocean.",
       "regionNote": "",
-      "userId": "",
+      "userId": 8,
       "packageId": 2,
       "numberOfDays": "10",
-      "cost": "10",
       "passengerNumber": "10",
       "paid": true,
-      "startAt": "2023-01-01",
+      "startAt": "2023-06-01",
       "createdAt": "2023-01-02",
-      "itineraries": [
-        2
-      ],
+      "itineraries": [7],
       "reviews": "",
       "url": "https://images.thrillophilia.com/image/upload/s--vI0Q6HT9--/c_fill,g_auto,h_600,q_auto,w_975/f_auto,fl_strip_profile/v1/images/photos/000/082/497/original/1675261154_shutterstock_2148766633.jpg.jpg",
       "regionId": 2,
       "agentId": 1,
       "agencyUuid": "22jfhuj47fjshdjshd",
       "packageCode": "PKG002",
-      "validFrom": "2023-01-01",
-      "validTo": "2023-12-31"
+      "validFrom": "2023-06-01",
+      "validTo": "2023-07-31"
     },
     {
       "id": 4,
       "bookingCode": "",
-      "name": "My Hurgada",
-      "description": "Hey there",
+      "name": "Hurgada",
+      "description": "Hurghada is a major tourist center of Egypt on the west coast of the Red Sea, 500 kilometers southeast of the capital Cairo.",
       "regionNote": "",
-      "userId": "",
+      "userId": 9,
       "packageId": 4,
       "numberOfDays": "13",
-      "cost": "12823",
       "passengerNumber": "10",
       "paid": false,
       "startAt": "2023-06-11",
       "createdAt": "2023-06-11",
-      "itineraries": [
-        2,
-        3
-      ],
+      "itineraries": [4],
       "reviews": "",
       "url": "https://158832095.g.lyrcdn.com/HotelImage/1/2567/124217_L.jpg",
-      "regionId": "2",
+      "regionId": "10",
       "agentId": "2",
       "agencyUuid": "",
       "packageCode": "H2ts",
-      "validFrom": "2023-03-12",
+      "validFrom": "2023-07-12",
       "validTo": "2023-10-10"
     },
     {
@@ -140,7 +159,6 @@
       "userId": "",
       "packageId": 1,
       "numberOfDays": 0,
-      "cost": 0,
       "passengerNumber": 0,
       "paid": false,
       "startAt": "2023-01-01",
@@ -260,6 +278,10 @@
     {
       "id": 8,
       "name": "NZD"
+    },
+    {
+      "id": 9,
+      "name": "EGP"
     }
   ],
   "regions": [
@@ -320,20 +342,25 @@
       "notes": "Some notes about Australia"
     },
     {
-      "regionId": "1",
-      "currencyId": "2",
-      "superRegionId": "",
-      "name": "Middle Europe",
-      "notes": "Some notes here",
-      "createdAt": "2023-06-11T17:41:17.743Z",
-      "id": 9
+      "id": 9,
+      "currencyId": 4,
+      "superRegionId": null,
+      "name": "Afrika",
+      "notes": "Some notes about Afrika"
     },
     {
-      "administrator": 0,
-      "name": "",
-      "address": "",
-      "agencyShortName": "",
-      "id": 10
+      "id": 10,
+      "currencyId": 10,
+      "superRegionId": 10,
+      "name": "Egypt",
+      "notes": "Some notes about Afrika"
+    },
+    {
+      "id": 11,
+      "currencyId": 6,
+      "superRegionId": null,
+      "name": "Asia",
+      "notes": "Some notes about Asia"
     }
   ],
   "users": [
@@ -434,7 +461,7 @@
       "address": "30 User St",
       "email": "user@user.com",
       "administratorAgency": null,
-      "password": "admin123"
+      "password": "user123"
     }
   ],
   "itineraries": [
@@ -470,6 +497,50 @@
       "region": "Barcelona",
       "note": "Explore the city's famous landmarks",
       "serviceType": "Sightseeing"
+    },
+    {
+      "id": 4,
+      "bookingId": 3,
+      "serviceId": 3,
+      "date": "2023-07-05",
+      "day": 3,
+      "capacity": 10,
+      "region": "Desert Safari",
+      "note": "Explore the city's famous landmarks",
+      "serviceType": "Trip"
+    },
+    {
+      "id": 5,
+      "bookingId": 1,
+      "serviceId": 3,
+      "date": "2023-07-05",
+      "day": 3,
+      "capacity": 10,
+      "region": "Hong Kong Disneyland",
+      "note": "",
+      "serviceType": "Trip"
+    },
+    {
+      "id": 6,
+      "bookingId": 1,
+      "serviceId": 3,
+      "date": "2023-07-05",
+      "day": 3,
+      "capacity": 10,
+      "region": "Ocean Park",
+      "note": "",
+      "serviceType": "Trip"
+    },
+    {
+      "id": 7,
+      "bookingId": 3,
+      "serviceId": 3,
+      "date": "2023-07-05",
+      "day": 3,
+      "capacity": 10,
+      "region": "Island Hopping",
+      "note": "",
+      "serviceType": "Exploring"
     }
   ]
 }

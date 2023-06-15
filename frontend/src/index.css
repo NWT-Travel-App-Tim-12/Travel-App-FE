@@ -386,7 +386,27 @@ h3,
   padding: 1rem;
   gap: 1rem;
 }
-
+.add-new-booking {
+  display: flex;
+  flex-direction: row !important;
+  gap: 1rem;
+}
+.add-new-booking-left {
+  flex: 3;
+}
+.add-new-booking-right {
+  flex: 1;
+}
+.add-new-booking-right div input {
+  flex: none !important;
+  margin-right: 1rem;
+}
+.add-new-booking-left,
+.add-new-booking-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 .booking-image img {
   width: 15rem;
 }
@@ -740,30 +760,38 @@ h3,
   position: absolute;
   right: 0;
 }
-.add-new-package {
+.add-new-package,
+.add-new-form {
   margin: auto;
   margin-bottom: 2rem;
   padding: 1rem;
 }
 
-.add-new-package form {
+.add-new-package form,
+.add-new-form form {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   margin: auto;
 }
-.add-new-package > form > div {
+.add-new-package > form > div > div > div,
+.add-new-form div {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-
-.add-new-package > form > div > label {
+.add-new-booking-left > div > label,
+.add-new-package > form > div > div > div > label,
+.add-new-form form div label {
   flex: 1;
   text-align: left;
 }
-.add-new-package > form > div > input,
-.add-new-package > form > div > select {
+.add-new-booking-left > div > input,
+.add-new-booking-left > div > select,
+.add-new-package > form > div > div > div > input,
+.add-new-package > form > div > div > div > select,
+.add-new-form > form > div > input,
+.add-new-form form div select {
   flex: 3;
 }
 
@@ -794,6 +822,14 @@ h3,
 
 .food-right .food-details {
   padding-left: 20px;
+}
+.payment-loader {
+  display: flex !important;
+  margin-top: 1rem;
+  justify-content: center !important;
+}
+.payment-loader div {
+  justify-content: center;
 }
 
 .food-right .food-details p {
@@ -948,7 +984,7 @@ table tbody tr td {
 }
 
 .footer .footer-link-div {
-  width: 150px;
+  width: 200px;
   margin: 1rem;
   display: flex;
   justify-content: flex-start;
@@ -959,11 +995,15 @@ table tbody tr td {
   text-decoration: none;
 }
 
-.footer .socail-media {
+.footer .social-media {
   display: flex;
   flex-direction: row;
 }
 
+#rc-tabs-3-tab-7,
+#rc-tabs-3-tab-8 {
+  background-color: #6082ff;
+}
 .social-media i {
   width: 30px;
   height: 30px;
@@ -973,6 +1013,7 @@ table tbody tr td {
   font-size: 18px;
   padding: 6px 0 0 6.8px;
   background: #930eff;
+  margin: 0.5rem;
 }
 
 .footer-link-div h4 {

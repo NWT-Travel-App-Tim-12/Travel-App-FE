@@ -66,7 +66,7 @@ export const AddNewPackageScreen = () => {
   return (
     <div className="">
       <h4>Add new package</h4>
-      <div className="col-md-5 add-new-package">
+      <div className="col-md-5 add-new-form">
         <hr />
         <form onSubmit={handleSubmit}>
           <div>

@@ -1,6 +1,6 @@
 const getUser = () => {
   const user = sessionStorage.getItem("USER");
-  if (user) return JSON.parse(user)[0];
+  if (user) return JSON.parse(user);
   return user;
 };
 

@@ -5,11 +5,9 @@ import HomeScreen from "./screens/Homescreen";
 import { Layout } from "./components/Layout";
 import LocationScreen from "./screens/PackagesScreen";
 import Registerscreen from "./screens/Registerscreen";
-import { LoginScreen } from "./screens/LoginScreen";
-import ProfileScreen from "./screens/Profilescreen";
+import { LoginScreen } from "./screens/Loginscreen";
 import AdminScreen from "./screens/AdminScreen";
 import AboutScreen from "./screens/AboutScreen";
-import Footer from "./components/Footer";
 import BookingsScreen from "./screens/BookingsScreen";
 import { AddNewPackageScreen } from "./screens/AddNewPackageScreen";
 import { AddNewRegionScreen } from "./screens/AddNewRegionScreen";
@@ -42,8 +40,8 @@ function App() {
                     <Route path="/location" element={<LocationScreen />} />
                     <Route path="/register" element={<Registerscreen />} />
                     <Route path="/login" element={<LoginScreen />} />
-                    <Route path="/profile" element={<ProfileScreen />} />
                     <Route path="/admin" element={<AdminScreen />} />
+                    <Route path="/agent" element={<AdminScreen />} />
                     <Route
                       path="/admin/new-package"
                       element={<AddNewPackageScreen />}
@@ -66,7 +64,10 @@ function App() {
                       path="/package/:id"
                       element={<AddNewBookingScreen />}
                     />
-                    <Route path="/payment/:bookingId" element={<PaymentScreen/>}></Route>
+                    <Route
+                      path="/payment/:bookingId"
+                      element={<PaymentScreen />}
+                    ></Route>
                   </Routes>
                 </Layout>
               }

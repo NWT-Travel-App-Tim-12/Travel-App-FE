@@ -18,15 +18,6 @@ function Footer() {
               <p>Register</p>
             </Link>
           </div>
-          <div className="footer-link-div">
-            <h4>Resource</h4>
-            <Link to="/home">
-              <p>employer</p>
-            </Link>
-            <Link to="/home">
-              <p>employer</p>
-            </Link>
-          </div>
 
           <div className="footer-link-div">
             <h4>Company</h4>

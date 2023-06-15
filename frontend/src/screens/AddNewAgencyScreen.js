@@ -70,7 +70,7 @@ export const AddNewAgencyScreen = () => {
   return (
     <div className="">
       <h4>Add new agency</h4>
-      <div className="col-md-5 add-new-package">
+      <div className="col-md-5 add-new-form">
         <hr />
         <form onSubmit={handleSubmit}>
           <div>
